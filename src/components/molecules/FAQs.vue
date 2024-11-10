@@ -7,7 +7,7 @@
       >
         <button
           @click="toggleItem(index)"
-          class="accordion-header flex justify-between items-center w-full text-left font-semibold text-lg py-2"
+          class="accordion-header flex justify-between items-center w-full text-left font-semibold text-base md:text-lg py-2"
         >
           <span>{{ item.title }}</span>
 
@@ -29,7 +29,7 @@
         </button>
         <div
           v-if="openIndex === index"
-          class="accordion-content mt-2 text-grey-400 text-base"
+          class="accordion-content mt-2 text-grey-400 text-sm md:text-base"
         >
           <p>{{ item.content }}</p>
         </div>

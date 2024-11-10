@@ -3,4 +3,84 @@
 @tailwind components;
 
 @tailwind utilities;
- 
+
+.custom-box1 {
+  position: absolute;
+  top: -160%;
+  left: 20%;
+  box-shadow: "0px 30px 90px 0px #8F9BAF2E";
+}
+.custom-box2 {
+  position: absolute;
+  top: -130%;
+  right: 15%;
+  box-shadow: "0px 30px 90px 0px #EEDFEA";
+}
+
+.custom-box3 {
+  position: absolute;
+  bottom: -90%;
+  right: 10%;
+  box-shadow: "0px 30px 90px 0px #D0E5D5";
+}
+
+.custom-box4 {
+  position: absolute;
+  bottom: -170%;
+  left: 30%;
+  box-shadow: "0px 30px 90px 0px #E7DFC9";
+}
+@media (max-width: 1280px) {
+  .custom-box1 {
+    left: -100%;
+  }
+  .custom-box2 {
+    right: -100%;
+  }
+  .custom-box3 {
+    right: -100%;
+    bottom: -150%;
+  }
+  .custom-box4 {
+    left: -100%;
+    bottom: -120%;
+  }
+}
+
+
+@media (max-width: 850px) {
+    .custom-box1 {
+      left: -50%;
+    }
+    .custom-box2 {
+      right: -50%;
+    }
+    .custom-box3 {
+      right: -50%;
+      bottom: -150%;
+    }
+    .custom-box4 {
+      left: -50%;
+      bottom: -120%;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    .custom-box1 {
+      left: -40%;
+      top: -100%;
+    }
+    .custom-box2 {
+      right: -30%;
+        top: -80%;
+    }
+    .custom-box3 {
+      right: -30%;
+      bottom: -120%;
+    }
+    .custom-box4 {
+      left: -40%;
+      bottom: -100%;
+    }
+  }
+  

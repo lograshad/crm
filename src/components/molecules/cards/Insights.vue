@@ -35,15 +35,15 @@ export default {
       backgroundColor: color,
       boxShadow: `0px 30px 90px 0px ${shadowColor}`
     }"
-    :class="`rounded-xl  p-7 shadow-[0px_30px_90px_0px_${shadowColor}] ${position}`"
+    :class="`rounded-xl px-3 py-1 md:p-7 shadow-[0px_30px_90px_0px_${shadowColor}] ${position}`"
   >
     <span
     :style="{
         color: textColor,
       }"
-     :class="`text-3xl font-semibold`"> {{ rate }}% </span>
+     :class="`text-lg md:text-3xl font-semibold`"> {{ rate }}% </span>
     <p
-      class="text-[#808080] capitalize text-sm border-t border-[#D6D6D6] mt-3 pt-3"
+      class="text-[#808080] capitalize text-xs md:text-sm border-t border-[#D6D6D6] mt-3 pt-3"
     >{{ insight }}</p>
   </div>
 </template>

@@ -5,8 +5,8 @@ import FooterLogoIcon from "~/components/icons/FooterLogoIcon.vue";
 </script>
 
 <template>
-  <div>
-    <div class="px-20">
+  <div class="w-full overflow-x-hidden">
+    <div class="md:px-20 px-5">
       <header class="flex items-center justify-between py-3">
         <LogoIcon class="" />
         <nav class="flex-1 flex gap-6 justify-center">
@@ -30,10 +30,10 @@ import FooterLogoIcon from "~/components/icons/FooterLogoIcon.vue";
       <slot />
     </div>
     <footer class="bg-purple-200 mt-32">
-      <div class="px-36 py-20">
+      <div class="px-5 md:px-36 py-20">
         <FooterLogoIcon />
-        <div class="flex gap-5 mt-5">
-          <div class="flex-1 flex gap-28">
+        <div class="flex xl:flex-row flex-col gap-5 mt-5">
+          <div class="flex-1 grid grid-cols-2 xl:flex gap-28">
             <div>
               <div class="text-lg font-semibold mb-4">Company</div>
               <ul class="flex flex-col gap-3">
@@ -119,10 +119,10 @@ import FooterLogoIcon from "~/components/icons/FooterLogoIcon.vue";
           </div>
         </div>
       </div>
-      <div class="bg-primary px-32 py-4 flex items-center justify-between">
-        <span class="text-white">© 2024 CRMinder</span>
-        <span class="text-white flex-1 text-center">Crafted with ❤️ by Protomated. All rights reserved.</span>
-        <span class="text-white">Protected by 256-bit encryption</span>
+      <div class="bg-primary px-5 md:px-32 py-4 flex items-center justify-between">
+        <span class="text-white text-xs">© 2024 CRMinder</span>
+        <span class="text-white flex-1 hidden md:flex justify-center text-center">Crafted with ❤️ by Protomated. All rights reserved.</span>
+        <span class="text-white text-xs">Protected by 256-bit encryption</span>
       </div>
     </footer>
   </div>

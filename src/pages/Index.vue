@@ -61,73 +61,68 @@ const faqItems = [
 <template>
   <Layout>
     <!-- hero section -->
-    <section class="flex items-center justify-between mt-14">
+    <section class="flex xl:flex-row flex-col items-center justify-center xl:justify-between mt-14">
       <div>
-        <p class="text-customHeroBlack text-lg font-medium mb-2 uppercase">
+        <p class="text-customHeroBlack text-sm md:text-lg font-medium mb-2 uppercase text-center xl:text-left">
           Let AI Qualify Them for You
         </p>
-        <h1 class="text-6xl text-customHeroBlack2 font-bold leading-110 mb-3">
-          Stop Drowning in<br />
+        <h1 class="text-3xl md:w-3/4 mx-auto xl:mx-0 xl:w-2/3 md:text-6xl text-customHeroBlack2 font-bold leading-110 mb-3 text-center xl:text-left">
+          Stop Drowning in
           Social Media Leads.
         </h1>
-        <p class="text-grey-400 text-lg mb-6">
+        <p class="text-grey-400 md:w-4/5 mx-auto xl:mx-0 xl:w-3/4 text-sm md:text-lg mb-6 text-center xl:text-left">
           Transform your browser into an AI-powered lead qualification engine.
-          Save<br />
+          Save
           43% of your prospecting time without leaving social media.
         </p>
         <button
-          class="bg-primary text-white text-base font-medium py-2 px-5 rounded-lg mb-3"
+          class="bg-primary text-white text-base font-medium py-2 px-5 rounded-lg mb-3 text-center mx-auto flex xl:block xl:mx-0"
         >
           Start Free Trial
         </button>
-        <p class="text-grey-400 text-sm">
+        <p class="text-grey-400 text-base md:text-sm xl:text-left text-center">
           14-day free trial. No credit card required.
         </p>
       </div>
-      <g-image alt="hero" src="~/assets/heroImg.png" width="391" height="469" />
+      <g-image alt="hero" src="~/assets/heroImg.png" width="391" height="469"  class="xl:mt-0 mt-14"/>
     </section>
     <!-- what we are solving -->
     <section class="mt-32">
-      <h2 class="text-center capitalize text-5xl font-bold mb-4">
+      <h2 class="text-center capitalize text-2xl md:text-5xl font-bold mb-4">
         What we are solving
       </h2>
-      <p class="text-xl text-grey-300 text-center">
+      <p class="text-sm md:text-xl text-grey-300 text-center">
         Your Social Media is a Gold Mine of Qualified Leads… If You Know Where
         to Look”
       </p>
-      <div class="flex items-center mt-40">
+      <div class="flex xl:flex-row flex-col items-center xl:mt-40">
         <div>
-          <div class="text-primary uppercase text-xl font-semibold mb-4">
+          <div class="text-primary uppercase text-xl font-semibold mb-4 xl:block hidden">
             Problems you face
           </div>
           <ul>
-            <li class="text-grey-400 font-medium py-6 border-t border-grey-300">
-              Spending hours manually <br />
+            <li class="text-grey-400 font-medium py-6 text-sm md:text-base xl:border-t border-grey-300">
+              Spending hours manually
               analyzing social interactions?
             </li>
-            <li class="text-grey-400 font-medium py-6 border-t border-grey-300">
+            <li class="text-grey-400 font-medium py-6 text-sm md:text-base border-t border-grey-300">
                Missing hot leads while they go cold?
             </li>
-            <li class="text-grey-400 font-medium py-6 border-t border-grey-300">
+            <li class="text-grey-400 font-medium py-6 text-sm md:text-base border-t border-grey-300">
               Tired of copying and pasting into your CRM?
             </li>
           </ul>
         </div>
-        <div class="relative flex-1 flex justify-center">
+        <div class="relative xl:flex-1 flex xl:mt-0 mt-48 justify-center">
           <div>
-            <h3 class="text-4xl font-bold mb-5">Meet CRMinder</h3>
-            <p class="text-grey-400 text-lg text-center">
+            <h3 class="text-2xl md:text-4xl font-bold mb-5">Meet CRMinder</h3>
+            <p class="text-grey-400 text-base md:text-lg text-center">
               Your AI-Powered Lead <br />
               Qualification Assistant
             </p>
           </div>
           <div
-            style="
-              position: absolute;
-              top: -160%;
-              left: 20%;
-              box-shadow: '0px 30px 90px 0px #8F9BAF2E';
-            "
+            class="custom-box1"
           >
             <Insights
               color="#EDEFF6"
@@ -138,12 +133,7 @@ const faqItems = [
             />
           </div>
           <div
-            style="
-              position: absolute;
-              top: -130%;
-              right: 15%;
-              box-shadow: '0px 30px 90px 0px #EEDFEA';
-            "
+            class="custom-box2"
           >
             <Insights
               color="#FEEFFA"
@@ -155,12 +145,7 @@ const faqItems = [
             />
           </div>
           <div
-            style="
-              position: absolute;
-              bottom: -90%;
-              right: 10%;
-              box-shadow: '0px 30px 90px 0px #D0E5D5';
-            "
+            class="custom-box3"
           >
             <Insights
               color="#DFF5E5"
@@ -172,12 +157,7 @@ const faqItems = [
             />
           </div>
           <div
-          style="
-              position: absolute;
-              bottom: -170%;
-              left: 30%;
-              box-shadow: '0px 30px 90px 0px #E7DFC9';
-            "
+          class="custom-box4"
           >
             <Insights
               color="#F5F0E0"
@@ -191,8 +171,8 @@ const faqItems = [
         </div>
       </div>
     </section>
-    <div class="border-[#E0E0FF] border rounded-xl bg-lightBlue p-12 mt-52">
-      <p class="text-grey-400 text-base">
+    <div class="border-[#E0E0FF] border rounded-xl bg-lightBlue p-5 md:p-12 mt-52">
+      <p class="text-grey-400 text-sm md:text-base">
         CRMinder sits right in your Chrome browser, analyzing every social
         interaction in real-time. While you browse LinkedIn and Twitter, our AI
         quietly qualifies leads, scores their potential, and syncs everything to
@@ -201,55 +181,55 @@ const faqItems = [
       <button
         class="flex items-center gap-3 rounded-lg bg-primary py-3 px-4 mt-5"
       >
-        <span class="text-white text-base">Get Early Access Now</span>
+        <span class="text-white text-sm md:text-base">Get Early Access Now</span>
         <ArrowRightIcon />
       </button>
     </div>
-    <section class="mt-32 flex gap-5">
+    <section class="mt-32 flex xl:flex-row flex-col gap-5">
       <div class="w-[40%]">
         <div
-          class="text-sm w-fit border-primary border rounded-lg py-1 px-2 font-medium"
+          class="text-sm w-fit border-primary border rounded-lg py-1 px-2 font-p-3 md:medium"
         >
           Features
         </div>
-        <h3 class="text-4xl font-bold mt-3">
+        <h3 class="text-2xl md:text-4xl font-bold mt-3">
           Everything You Need to Convert Social Browsers Into Buyers
         </h3>
-        <p class="text-base text-grey-300 mt-5">
+        <p class="text-base text-grey-300 text-sm mt-5">
           Early Access Special Offer” Join our exclusive beta program and lock
-          in lifetime savings of 35%
+          in p-3 md:lifetime savings of 35%
         </p>
       </div>
-      <div class="grid grid-cols-2 gap-6">
+      <div class="grid grid-cols-1 xl:grid-cols-2 gap-6">
         <div class="p-6 rounded-lg border border-[#D6D6D6] h-[166px]">
           <div class="text-lg font-bold text-[#0D0D0D]">AI Analysis</div>
-          <p class="text-base text-grey-300">
+          <p class="text-base text-grey-300 text-sm">
             Instant Lead Scoring Smart AI analyzes engagement patterns and
-            conversation context to identify your hottest leads.
+            conversation context to identify your hottest p-3 md:leads.
           </p>
         </div>
         <div
-          class="p-6 rounded-lg border border-[#D6D6D6] h-[166px] -mt-[18px]"
+          class="p-6 rounded-lg border border-[#D6D6D6] h-[166px] xl:-mt-[18px]"
         >
           <div class="text-lg font-bold text-[#0D0D0D]">AI Analysis</div>
-          <p class="text-base text-grey-300">
+          <p class="text-base text-grey-300 text-sm">
             Instant Lead Scoring Smart AI analyzes engagement patterns and
-            conversation context to identify your hottest leads.
+            conp-3 md:versation context to identify your hottest leads.
           </p>
         </div>
         <div class="p-6 rounded-lg border border-[#D6D6D6] h-[166px]">
           <div class="text-lg font-bold text-[#0D0D0D]">AI Analysis</div>
-          <p class="text-base text-grey-300">
+          <p class="text-base text-grey-300 text-sm">
             Instant Lead Scoring Smart AI analyzes engagement patterns and
             conversation context to identify your hottest leads.
-          </p>
+      p-3 md:    </p>
         </div>
         <div
         style="box-shadow: 0px 30px 90px 0px #0000001A"
-          class="p-6 rounded-lg bg-orange-100 -mt-[18px] shadow-[0px_30px_90px_0px_#0000001A]"
+          class="p-6 rounded-lg bg-orange-100 xl:-mt-[18px] shadow-[0px_30px_90px_0px_#0000001A]"
         >
           <div class="text-lg font-bold text-orange-400">AI Analysis</div>
-          <p class="text-base text-grey-300">
+          <p class="text-base text-grey-300 text-sm">
             Instant Lead Scoring Smart AI analyzes engagement patterns and
             conversation context to identify your hottest leads.
           </p>
@@ -262,67 +242,67 @@ const faqItems = [
         </div>
       </div>
     </section>
-    <section class="mt-32 flex gap-5">
+    <section class="mt-32 flex xl:flex-row flex-col gap-5">
       <div class="w-[40%]">
         <div
           class="text-sm w-fit border-primary border rounded-lg py-1 px-2 font-medium"
         >
           How it works
         </div>
-        <h3 class="text-4xl font-bold mt-3">
+        <h3 class="text-2xl md:text-4xl font-bold mt-3">
           Qualify More Leads in 4 Simple Steps
         </h3>
         <button
           class="flex items-center gap-3 rounded-lg bg-primary py-3 px-4 mt-5"
         >
-          <span class="text-white text-base">Watch 2-minute demo</span>
+          <span class="text-white text-sm md:text-base">Watch 2-minute demo</span>
           <ArrowRightIcon />
         </button>
       </div>
       <div class="flex flex-col gap-7">
         <div
-          class="p-6 rounded-2xl border border-[#D6D6D6] flex items-start gap-6"
+          class="p-3 md:p-6 rounded-2xl border border-[#D6D6D6] flex md:flex-row flex-col items-start gap-6"
         >
           <g-image src="~/assets/step1.png" width="208" height="168" />
           <div>
             <div class="text-lg font-bold text-[#0D0D0D]">AI Analysis</div>
-            <p class="text-base text-grey-300">
+            <p class="text-base text-grey-300 text-sm">
               Instant Lead Scoring Smart AI analyzes engagement patterns and
               conversation context to identify your hottest leads.
             </p>
           </div>
         </div>
         <div
-          class="p-6 rounded-2xl border border-[#D6D6D6] flex items-start gap-6"
+          class="p-3 md:p-6 rounded-2xl border border-[#D6D6D6] flex md:flex-row flex-col items-start gap-6"
         >
           <g-image src="~/assets/step1.png" width="208" height="168" />
           <div>
             <div class="text-lg font-bold text-[#0D0D0D]">AI Analysis</div>
-            <p class="text-base text-grey-300">
+            <p class="text-base text-grey-300 text-sm">
               Instant Lead Scoring Smart AI analyzes engagement patterns and
               conversation context to identify your hottest leads.
             </p>
           </div>
         </div>
         <div
-          class="p-6 rounded-2xl border border-[#D6D6D6] flex items-start gap-6"
+          class="p-3 md:p-6 rounded-2xl border border-[#D6D6D6] flex md:flex-row flex-col items-start gap-6"
         >
           <g-image src="~/assets/step1.png" width="208" height="168" />
           <div>
             <div class="text-lg font-bold text-[#0D0D0D]">AI Analysis</div>
-            <p class="text-base text-grey-300">
+            <p class="text-base text-grey-300 text-sm">
               Instant Lead Scoring Smart AI analyzes engagement patterns and
               conversation context to identify your hottest leads.
             </p>
           </div>
         </div>
         <div
-          class="p-6 rounded-2xl border border-[#D6D6D6] flex items-start gap-6"
+          class="p-3 md:p-6 rounded-2xl border border-[#D6D6D6] flex md:flex-row flex-col items-start gap-6"
         >
           <g-image src="~/assets/step1.png" width="208" height="168" />
           <div>
             <div class="text-lg font-bold text-[#0D0D0D]">AI Analysis</div>
-            <p class="text-base text-grey-300">
+            <p class="text-base text-grey-300 text-sm">
               Instant Lead Scoring Smart AI analyzes engagement patterns and
               conversation context to identify your hottest leads.
             </p>
@@ -336,17 +316,17 @@ const faqItems = [
       >
         Testimonial
       </div>
-      <h3 class="text-4xl font-bold mt-3 text-center">
+      <h3 class="text-2xl md:text-4xl font-bold mt-3 text-center">
         What Forward-Thinking Sales Teams Are Saying
       </h3>
       <div
-        class="flex items-center mt-14 gap-10 mx-auto justify-center max-w-[80%]"
+        class="flex flex-col xl:flex-row items-center mt-14 gap-10 mx-auto justify-center max-w-[80%]"
       >
         <div
-          class="rounded-xl border-[#E0E0FF] border px-6 py-8 bg-lightBlue"
+          class="rounded-xl border-[#E0E0FF] border px-3 py-5 bg-lightBlue"
         >
           <p
-            class="text-grey-300 text-center text-base pb-4 border-b border-[#E0E0FF]"
+            class="text-grey-300 text-center text-sm md:text-base pb-4 border-b border-[#E0E0FF]"
           >
             CRMinder helped us identify qualified leads we were completely
             missing. Our team’s productivity shot up by 40% in the first month
@@ -364,10 +344,10 @@ const faqItems = [
           />
         </div>
         <div
-          class="rounded-xl border-[#E0E0FF] border px-6 py-8 bg-lightBlue"
+          class="rounded-xl border-[#E0E0FF] border px-3 py-5 bg-lightBlue"
         >
           <p
-            class="text-grey-300 text-center text-base pb-4 border-b border-[#E0E0FF]"
+            class="text-grey-300 text-center text-sm md:text-base pb-4 border-b border-[#E0E0FF]"
           >
             CRMinder helped us identify qualified leads we were completely
             missing. Our team’s productivity shot up by 40% in the first month
@@ -385,10 +365,10 @@ const faqItems = [
           />
         </div>
         <div
-          class="rounded-xl border-[#E0E0FF] border px-6 py-8 bg-lightBlue"
+          class="rounded-xl border-[#E0E0FF] border px-3 py-5 bg-lightBlue"
         >
           <p
-            class="text-grey-300 text-center text-base pb-4 border-b border-[#E0E0FF]"
+            class="text-grey-300 text-center text-sm md:text-base pb-4 border-b border-[#E0E0FF]"
           >
             CRMinder helped us identify qualified leads we were completely
             missing. Our team’s productivity shot up by 40% in the first month
@@ -413,7 +393,7 @@ const faqItems = [
       >
         Demo
       </div>
-      <h3 class="text-4xl font-bold mt-3 text-center">
+      <h3 class="text-3xl md:text-4xl font-bold mt-3 text-center">
         See CRMinder in Action
       </h3>
       <p class="text-base text-grey-400 text-center mt-3">
@@ -427,22 +407,22 @@ const faqItems = [
         class="mx-auto rounded-2xl mt-16 mb-14"
       />
       <div>
-        <div class="flex items-center justify-center gap-3 mb-2">
-          <span class="py-2 px-5 rounded-xl text-sm text-primary bg-purple-400"
+        <div class="grid grid-cols-2 md:flex items-center justify-center gap-3 mb-2">
+          <span class="py-1 px-2 col-span-2 text-center rounded-xl text-xs md:text-sm text-primary bg-purple-400"
             >Real-time lead scoring as you browse</span
           >
-          <span class="py-2 px-5 rounded-xl text-sm text-pink-100 bg-pink-400"
+          <span class="py-1 px-2 rounded-xl text-xs md:text-sm text-center text-pink-100 bg-pink-400"
             >One-click CRM integration</span
           >
-          <span class="py-2 px-5 rounded-xl text-sm text-green-100 bg-green-400"
+          <span class="py-1 px-2 rounded-xl text-xs md:text-sm text-center text-green-100 bg-green-400"
             >Smart engagement analysis</span
           >
         </div>
         <div class="flex items-center justify-center gap-3">
-          <span class="py-2 px-5 rounded-xl text-sm text-brown-100 bg-brown-400"
+          <span class="py-1 px-2 rounded-xl text-xs md:text-sm text-center text-brown-100 bg-brown-400"
             >Automated lead enrichment
           </span>
-          <span class="py-2 px-5 rounded-xl text-sm text-maroon-100 bg-maroon-400"
+          <span class="py-1 px-2 rounded-xl text-xs md:text-sm text-center text-maroon-100 bg-maroon-400"
             >Team collaboration tools</span
           >
         </div>
@@ -461,18 +441,18 @@ const faqItems = [
     </section>
     <section class="mt-32">
       <div class="text-primary text-sm text-center">Pricing Table</div>
-      <h3 class="text-4xl font-bold mt-3 mb-6 text-center">
+      <h3 class="text-2xl md:text-4xl font-bold mt-3 mb-6 text-center">
         Choose the Perfect Plan for Your Team
       </h3>
-      <div class="rounded-2xl bg-customBlue p-6 w-[75%] mx-auto mb-20">
-        <div class="text-primary text-2xl font-medium text-center">
+      <div class="rounded-2xl bg-customBlue p-3 md:p-6 w-[75%] mx-auto mb-20">
+        <div class="text-primary text-base md:text-2xl font-medium text-center">
           🚀 ...Launch Special.... Lock in 35% lifetime discount
         </div>
-        <p class="text-base text-grey-400 text-center">
+        <p class="text-sm md:text-base text-grey-400 text-center">
           Early access members lock in these prices for life
         </p>
       </div>
-      <div class="w-[80%] justify-center mx-auto flex gap-4 items-stretch">
+      <div class="w-[80%] justify-center mx-auto flex xl:flex-row flex-col gap-4 items-stretch">
         <div
           class="border-[#D6D6D6] border rounded-xl px-4 py-6 min-h-full flex-1 flex flex-col"
         >
@@ -623,9 +603,9 @@ const faqItems = [
       </div>
     </section>
     <!-- FAQs section -->
-    <section class="mt-32 flex gap-12 px-20">
+    <section class="mt-32 flex xl:flex-row flex-col gap-12 md:px-20">
       <div>
-        <div class="font-bold text-4xl">FAQ's</div>
+        <div class="font-bold text-2xl md:text-4xl">FAQ's</div>
         <p class="text-grey-300 font-medium text-base mt-4">
           You can reach out to us at crminder@gmail.com
         </p>
