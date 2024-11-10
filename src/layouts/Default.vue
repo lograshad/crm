@@ -29,7 +29,7 @@ import FooterLogoIcon from "~/components/icons/FooterLogoIcon.vue";
       </header>
       <slot />
     </div>
-    <footer class="bg-[#F9F9FB]">
+    <footer class="bg-purple-200 mt-32">
       <div class="px-36 py-20">
         <FooterLogoIcon />
         <div class="flex gap-5 mt-5">

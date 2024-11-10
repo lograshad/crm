@@ -14,5 +14,12 @@ module.exports = {
         optimizeCSS: false
       }
     }
-  ]
+  ],
+  chainWebpack: config => {
+    config.module
+      .rule("postcss-loader")
+      .test(/.css$/)
+      .use(["tailwindcss", "autoprefixer"])
+      .loader("postcss-loader");
+  }
 }

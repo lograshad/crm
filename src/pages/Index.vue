@@ -43,8 +43,10 @@ const enterprisePlan = [
 ];
 const faqItems = [
   {
-     title: "How accurate is the AI lead scoring? ",
-   content: "Our AI model has achieved 92% accuracy in identifying high-potential leads, based on analyzing millions of social media interactions. It continuously learns and improves from your team’s feedback." },
+    title: "How accurate is the AI lead scoring? ",
+    content:
+      "Our AI model has achieved 92% accuracy in identifying high-potential leads, based on analyzing millions of social media interactions. It continuously learns and improves from your team’s feedback.",
+  },
   {
     title: "How do I track my order?",
     content: "You can track your order by...",
@@ -61,14 +63,14 @@ const faqItems = [
     <!-- hero section -->
     <section class="flex items-center justify-between mt-14">
       <div>
-        <p class="text-[#162450] text-lg font-medium mb-2 uppercase">
+        <p class="text-customHeroBlack text-lg font-medium mb-2 uppercase">
           Let AI Qualify Them for You
         </p>
-        <h1 class="text-6xl text-[#121212] font-bold leading-[110%] mb-3">
+        <h1 class="text-6xl text-customHeroBlack2 font-bold leading-110 mb-3">
           Stop Drowning in<br />
           Social Media Leads.
         </h1>
-        <p class="text-[#616161] text-lg mb-6">
+        <p class="text-grey-400 text-lg mb-6">
           Transform your browser into an AI-powered lead qualification engine.
           Save<br />
           43% of your prospecting time without leaving social media.
@@ -78,7 +80,7 @@ const faqItems = [
         >
           Start Free Trial
         </button>
-        <p class="text-[#616161] text-sm">
+        <p class="text-grey-400 text-sm">
           14-day free trial. No credit card required.
         </p>
       </div>
@@ -119,43 +121,78 @@ const faqItems = [
               Qualification Assistant
             </p>
           </div>
-          <Insights
-            color="#EDEFF6"
-            shadowColor="#8F9BAF2E"
-            rate="43"
-            insight="Less Time Prospecting"
-            textColor="text-[#162450]"
-            position="-top-[160%] left-[20%]"
-          />
-          <Insights
-            color="#FEEFFA"
-            shadowColor="#EEDFEA"
-            rate="43"
-            insight="More Qualified Leads"
-            textColor="text-[#501641]"
-            position="-top-[130%] right-[15%]"
-          />
-          <Insights
-            color="#DFF5E5"
-            shadowColor="#D0E5D5"
-            rate="43"
-            insight="Less Manual Data Entry"
-            textColor="text-[#165025]"
-            position="-bottom-[90%] right-[10%]"
-          />
-          <Insights
-            color="#F5F0E0"
-            shadowColor="#E7DFC9"
-            rate="43"
-            insight="Hours Saved Per Week"
-            textColor="text-[#504216]"
-            position="-bottom-[170%] left-[30%]"
-          />
+          <div
+            style="
+              position: absolute;
+              top: -160%;
+              left: 20%;
+              box-shadow: '0px 30px 90px 0px #8F9BAF2E';
+            "
+          >
+            <Insights
+              color="#EDEFF6"
+              shadowColor="#8F9BAF2E"
+              rate="43"
+              insight="Less Time Prospecting"
+              textColor="#162450"
+            />
+          </div>
+          <div
+            style="
+              position: absolute;
+              top: -130%;
+              right: 15%;
+              box-shadow: '0px 30px 90px 0px #EEDFEA';
+            "
+          >
+            <Insights
+              color="#FEEFFA"
+              shadowColor="#EEDFEA"
+              rate="43"
+              insight="More Qualified Leads"
+              textColor="#501641"
+              position="-top-[130%] right-[15%]"
+            />
+          </div>
+          <div
+            style="
+              position: absolute;
+              bottom: -90%;
+              right: 10%;
+              box-shadow: '0px 30px 90px 0px #D0E5D5';
+            "
+          >
+            <Insights
+              color="#DFF5E5"
+              shadowColor="#D0E5D5"
+              rate="43"
+              insight="Less Manual Data Entry"
+              textColor="#165025"
+              position="-bottom-[90%] right-[10%]"
+            />
+          </div>
+          <div
+          style="
+              position: absolute;
+              bottom: -170%;
+              left: 30%;
+              box-shadow: '0px 30px 90px 0px #E7DFC9';
+            "
+          >
+            <Insights
+              color="#F5F0E0"
+              shadowColor="#E7DFC9"
+              rate="43"
+              insight="Hours Saved Per Week"
+              textColor="#504216"
+              position="-bottom-[170%] left-[30%]"
+            />
+          </div>
         </div>
       </div>
     </section>
-    <div class="border-[#E0E0FF] border rounded-xl bg-[#E0E0FF1A] p-12 mt-52">
-      <p class="text-[#616161] text-base">
+    <div class="border-[#E0E0FF] border rounded-xl bg-lightBlue p-12 mt-52">
+      <p class="text-grey-400 text-base">
         CRMinder sits right in your Chrome browser, analyzing every social
         interaction in real-time. While you browse LinkedIn and Twitter, our AI
         quietly qualifies leads, scores their potential, and syncs everything to
@@ -208,15 +245,16 @@ const faqItems = [
           </p>
         </div>
         <div
-          class="p-6 rounded-lg bg-[#FAEDE9] -mt-[18px] shadow-[0px_30px_90px_0px_#0000001A]"
+        style="box-shadow: 0px 30px 90px 0px #0000001A"
+          class="p-6 rounded-lg bg-orange-100 -mt-[18px] shadow-[0px_30px_90px_0px_#0000001A]"
         >
-          <div class="text-lg font-bold text-[#D47A5F]">AI Analysis</div>
+          <div class="text-lg font-bold text-orange-400">AI Analysis</div>
           <p class="text-base text-grey-300">
             Instant Lead Scoring Smart AI analyzes engagement patterns and
             conversation context to identify your hottest leads.
           </p>
           <button
-            class="flex items-center gap-3 rounded-lg bg-[#D47A5F] py-3 px-4 mt-5"
+            class="flex items-center gap-3 rounded-lg bg-orange-400 py-3 px-4 mt-5"
           >
             <span class="text-white text-base">Claim your spot</span>
             <ArrowRightIcon />
@@ -305,7 +343,7 @@ const faqItems = [
         class="flex items-center mt-14 gap-10 mx-auto justify-center max-w-[80%]"
       >
         <div
-          class="rounded-xl border-[#E0E0FF] border px-6 py-8 bg-[#E0E0FF1A]"
+          class="rounded-xl border-[#E0E0FF] border px-6 py-8 bg-lightBlue"
         >
           <p
             class="text-grey-300 text-center text-base pb-4 border-b border-[#E0E0FF]"
@@ -326,7 +364,7 @@ const faqItems = [
           />
         </div>
         <div
-          class="rounded-xl border-[#E0E0FF] border px-6 py-8 bg-[#E0E0FF1A]"
+          class="rounded-xl border-[#E0E0FF] border px-6 py-8 bg-lightBlue"
         >
           <p
             class="text-grey-300 text-center text-base pb-4 border-b border-[#E0E0FF]"
@@ -347,7 +385,7 @@ const faqItems = [
           />
         </div>
         <div
-          class="rounded-xl border-[#E0E0FF] border px-6 py-8 bg-[#E0E0FF1A]"
+          class="rounded-xl border-[#E0E0FF] border px-6 py-8 bg-lightBlue"
         >
           <p
             class="text-grey-300 text-center text-base pb-4 border-b border-[#E0E0FF]"
@@ -390,21 +428,21 @@ const faqItems = [
       />
       <div>
         <div class="flex items-center justify-center gap-3 mb-2">
-          <span class="py-2 px-5 rounded-xl text-sm text-primary bg-[#EDEFF6]"
+          <span class="py-2 px-5 rounded-xl text-sm text-primary bg-purple-400"
             >Real-time lead scoring as you browse</span
           >
-          <span class="py-2 px-5 rounded-xl text-sm text-[#501641] bg-[#FEEFFA]"
+          <span class="py-2 px-5 rounded-xl text-sm text-pink-100 bg-pink-400"
             >One-click CRM integration</span
           >
-          <span class="py-2 px-5 rounded-xl text-sm text-[#165025] bg-[#DFF5E5]"
+          <span class="py-2 px-5 rounded-xl text-sm text-green-100 bg-green-400"
             >Smart engagement analysis</span
           >
         </div>
         <div class="flex items-center justify-center gap-3">
-          <span class="py-2 px-5 rounded-xl text-sm text-[#504216] bg-[#F5F0E0]"
+          <span class="py-2 px-5 rounded-xl text-sm text-brown-100 bg-brown-400"
             >Automated lead enrichment
           </span>
-          <span class="py-2 px-5 rounded-xl text-sm text-[#D47A5F] bg-[#F9E9E4]"
+          <span class="py-2 px-5 rounded-xl text-sm text-maroon-100 bg-maroon-400"
             >Team collaboration tools</span
           >
         </div>
@@ -426,7 +464,7 @@ const faqItems = [
       <h3 class="text-4xl font-bold mt-3 mb-6 text-center">
         Choose the Perfect Plan for Your Team
       </h3>
-      <div class="rounded-2xl bg-[#E0E0FF] p-6 w-[75%] mx-auto mb-20">
+      <div class="rounded-2xl bg-customBlue p-6 w-[75%] mx-auto mb-20">
         <div class="text-primary text-2xl font-medium text-center">
           🚀 ...Launch Special.... Lock in 35% lifetime discount
         </div>
@@ -593,7 +631,7 @@ const faqItems = [
         </p>
       </div>
       <div class="flex-1">
-      <FAQs :items="faqItems" />
+        <FAQs :items="faqItems" />
       </div>
     </section>
   </Layout>
