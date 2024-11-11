@@ -4,6 +4,15 @@
 
 @tailwind utilities;
 
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+.w-fit {
+    width: fit-content;
+}
+
 .custom-box1 {
   position: absolute;
   top: -160%;

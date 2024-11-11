@@ -9,7 +9,7 @@ export default {
     FAQs,
   },
   metaInfo: {
-    title: "Hello, world!",
+    title: "CRMinder - AI-Powered Lead Qualification Assistant",
   },
   data() {
     return {
@@ -87,7 +87,7 @@ const faqItems = [
       <g-image alt="hero" src="~/assets/heroImg.png" width="391" height="469"  class="xl:mt-0 mt-14"/>
     </section>
     <!-- what we are solving -->
-    <section class="mt-32">
+    <section class="mt-32" id="features">
       <h2 class="text-center capitalize text-2xl md:text-5xl font-bold mb-4">
         What we are solving
       </h2>
@@ -211,27 +211,23 @@ const faqItems = [
         <div
           class="p-6 rounded-lg border border-[#D6D6D6] h-[166px] xl:-mt-[18px]"
         >
-          <div class="text-lg font-bold text-[#0D0D0D]">AI Analysis</div>
+          <div class="text-lg font-bold text-[#0D0D0D]">Seamless Integration</div>
           <p class="text-base text-grey-300 text-sm">
-            Instant Lead Scoring Smart AI analyzes engagement patterns and
-            conp-3 md:versation context to identify your hottest leads.
+            Works With Your Stack Direct integration with HubSpot CRM - more platforms coming soon.
           </p>
         </div>
         <div class="p-6 rounded-lg border border-[#D6D6D6] h-[166px]">
-          <div class="text-lg font-bold text-[#0D0D0D]">AI Analysis</div>
+          <div class="text-lg font-bold text-[#0D0D0D]">One-Click Qualification</div>
           <p class="text-base text-grey-300 text-sm">
-            Instant Lead Scoring Smart AI analyzes engagement patterns and
-            conversation context to identify your hottest leads.
-      p-3 md:    </p>
+            Zero Learning Curve Qualify leads with a single click while browsing. No new tabs, no complex workflows.</p>
         </div>
         <div
         style="box-shadow: 0px 30px 90px 0px #0000001A"
           class="p-6 rounded-lg bg-orange-100 xl:-mt-[18px] shadow-[0px_30px_90px_0px_#0000001A]"
         >
-          <div class="text-lg font-bold text-orange-400">AI Analysis</div>
+          <div class="text-lg font-bold text-orange-400">Early Access Special Offer</div>
           <p class="text-base text-grey-300 text-sm">
-            Instant Lead Scoring Smart AI analyzes engagement patterns and
-            conversation context to identify your hottest leads.
+            Join our exclusive beta program and lock in lifetime savings of 35%
           </p>
           <button
             class="flex items-center gap-3 rounded-lg bg-orange-400 py-3 px-4 mt-5"
@@ -265,46 +261,42 @@ const faqItems = [
         >
           <g-image src="~/assets/step1.png" width="208" height="168" />
           <div>
-            <div class="text-lg font-bold text-[#0D0D0D]">AI Analysis</div>
+            <div class="text-lg font-bold text-[#0D0D0D]">Step 1</div>
             <p class="text-base text-grey-300 text-sm">
-              Instant Lead Scoring Smart AI analyzes engagement patterns and
-              conversation context to identify your hottest leads.
+              Install the Chrome Extension Just click ‘Add to Chrome’ and you’re ready to start. No complex setup required.
             </p>
           </div>
         </div>
         <div
           class="p-3 md:p-6 rounded-2xl border border-[#D6D6D6] flex md:flex-row flex-col items-start gap-6"
         >
-          <g-image src="~/assets/step1.png" width="208" height="168" />
+          <g-image src="~/assets/step2.png" width="208" height="168" />
           <div>
-            <div class="text-lg font-bold text-[#0D0D0D]">AI Analysis</div>
+            <div class="text-lg font-bold text-[#0D0D0D]">Step 2</div>
             <p class="text-base text-grey-300 text-sm">
-              Instant Lead Scoring Smart AI analyzes engagement patterns and
-              conversation context to identify your hottest leads.
+              Browse Social Media Normally Use LinkedIn and Twitter as you always do. CRMinder works silently in the background.
             </p>
           </div>
         </div>
         <div
           class="p-3 md:p-6 rounded-2xl border border-[#D6D6D6] flex md:flex-row flex-col items-start gap-6"
         >
-          <g-image src="~/assets/step1.png" width="208" height="168" />
+          <g-image src="~/assets/step3.png" width="208" height="168" />
           <div>
-            <div class="text-lg font-bold text-[#0D0D0D]">AI Analysis</div>
+            <div class="text-lg font-bold text-[#0D0D0D]">Step 3</div>
             <p class="text-base text-grey-300 text-sm">
-              Instant Lead Scoring Smart AI analyzes engagement patterns and
-              conversation context to identify your hottest leads.
+              Let AI Qualify Your Leads Our AI analyzes engagement patterns, conversation context, and buyer intent signals in real-time.
             </p>
           </div>
         </div>
         <div
           class="p-3 md:p-6 rounded-2xl border border-[#D6D6D6] flex md:flex-row flex-col items-start gap-6"
         >
-          <g-image src="~/assets/step1.png" width="208" height="168" />
+          <g-image src="~/assets/step4.png" width="208" height="168" />
           <div>
-            <div class="text-lg font-bold text-[#0D0D0D]">AI Analysis</div>
+            <div class="text-lg font-bold text-[#0D0D0D]">Step 4</div>
             <p class="text-base text-grey-300 text-sm">
-              Instant Lead Scoring Smart AI analyzes engagement patterns and
-              conversation context to identify your hottest leads.
+              Convert More Efficiently Get instant lead scores and sync qualified prospects to your CRM with one click.
             </p>
           </div>
         </div>
@@ -349,16 +341,14 @@ const faqItems = [
           <p
             class="text-grey-300 text-center text-sm md:text-base pb-4 border-b border-[#E0E0FF]"
           >
-            CRMinder helped us identify qualified leads we were completely
-            missing. Our team’s productivity shot up by 40% in the first month
-            alone.
+          The AI is scary good at spotting potential buyers. We’ve cut our prospecting time in half and our conversion rates have never been better
           </p>
-          <p class="text-center text-base font-semibold">Sarah Chen</p>
+          <p class="text-center text-base font-semibold">Michael Rodriguez</p>
           <p class="text-grey-300 text-base text-center">
-            Sales Director, TF Solutions
+            Lead  Manager, Growth Agency
           </p>
           <g-image
-            src="~/assets/avatar1.png"
+            src="~/assets/avatar2.png"
             width="80"
             height="80"
             class="rounded-full mx-auto mt-2"
@@ -379,7 +369,7 @@ const faqItems = [
             Sales Director, TF Solutions
           </p>
           <g-image
-            src="~/assets/avatar1.png"
+            src="~/assets/avatar3.png"
             width="80"
             height="80"
             class="rounded-full mx-auto mt-2"
@@ -439,7 +429,7 @@ const faqItems = [
         14-day free trial. No credit card required.
       </p>
     </section>
-    <section class="mt-32">
+    <section class="mt-32" id="pricing">
       <div class="text-primary text-sm text-center">Pricing Table</div>
       <h3 class="text-2xl md:text-4xl font-bold mt-3 mb-6 text-center">
         Choose the Perfect Plan for Your Team
@@ -465,7 +455,7 @@ const faqItems = [
             <div>
               <span class="text-5xl">29</span>
               <span class="text-grey-400">
-                <span class="text-2xl font-medium">40</span>
+                <span class="text-2xl font-medium line-through">40</span>
                 <span class="text-sm font-medium">/month</span>
               </span>
             </div>
@@ -505,16 +495,16 @@ const faqItems = [
         <div
           class="border-[#D6D6D6] border rounded-xl px-4 py-6 min-h-full flex-1 flex flex-col"
         >
-          <div class="text-2xl font-500">Starter Plan</div>
+          <div class="text-2xl font-500">Proffessional Plan</div>
           <p class="text-base font-light text-grey-300 mt-3">
-            Perfect for individuals & small teams
+            Small Ideal for growing sales teams
           </p>
           <div class="flex items-start">
             <span class="text-2xl font-medium">$</span>
             <div>
-              <span class="text-5xl">29</span>
+              <span class="text-5xl">79</span>
               <span class="text-grey-400">
-                <span class="text-2xl font-medium">40</span>
+                <span class="text-2xl font-medium line-through">90</span>
                 <span class="text-sm font-medium">/month</span>
               </span>
             </div>
@@ -554,17 +544,14 @@ const faqItems = [
         <div
           class="border-[#D6D6D6] border rounded-xl px-4 py-6 min-h-full flex-1 flex flex-col"
         >
-          <div class="text-2xl font-500">Starter Plan</div>
+          <div class="text-2xl font-500">Enterprise Plan</div>
           <p class="text-base font-light text-grey-300 mt-3">
-            Perfect for individuals & small teams
+            Enterprise Plan
           </p>
           <div class="flex items-start">
-            <span class="text-2xl font-medium">$</span>
             <div>
-              <span class="text-5xl">29</span>
+              <span class="text-5xl">Custom</span>
               <span class="text-grey-400">
-                <span class="text-2xl font-medium">40</span>
-                <span class="text-sm font-medium">/month</span>
               </span>
             </div>
           </div>
